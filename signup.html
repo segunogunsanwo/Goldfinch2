@@ -1,3 +1,5 @@
+<!--This is the template for the goldfinch website. It already has the header and footer embedded. Just duplicate and insert code in the body-->
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -15,11 +17,11 @@
       crossorigin="anonymous"
     />
     <!-- css -->
-    <link rel="stylesheet" href="css/styles.css" />
-
+    <link rel="stylesheet" href="./styles/footer.css" />
+    <link rel="stylesheet" href="./styles/header.css" />
     <!--Script for Font awesome icons-->
     <script
-      src="https://kit.fontawesome.com/ad8cc7c5e9.js"
+      src="https://kit.fontawesome.com/149ae3bfe5.js"
       crossorigin="anonymous"
     ></script>
     <!-- importing header and footer templates -->
@@ -31,6 +33,8 @@
     </script>
   </head>
   <body>
+    <div id="header"></div>
+
     <main class="container mb-5">
       <section class="container d-flex justify-content-center my-5 w-50">
         <div class="d-flex flex-column">
@@ -110,17 +114,23 @@
           </div>
 
           <p class="password-req">
-            <em
-              >Password Requirements* <br />
-              passwords should be a minimum of 8 characters and have a
-              combination of Uppercase, Lowercase, Numbers and Symbols.
-            </em>
+            <small>
+              <em
+                >Password Requirements* <br />
+                8+ Characters - At least 1 Upper Alphabet, 1 Lower Case
+                Alphabet, 1 Number & 1 Symbol.
+              </em></small
+            >
           </p>
 
-          <button type="submit" class="btn btn-md">Create Account</button>
+          <button type="submit" class="btn btn-md btn-dark">
+            Create Account
+          </button>
         </div>
       </section>
     </main>
+
+    <div id="footer"></div>
 
     <!-- bootstrap JS -->
     <script
