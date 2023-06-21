@@ -1,0 +1,11 @@
+.footer {
+  font-family: "Blinker", sans-serif;
+  font-size: 16px;
+  background-color: #b76e79;
+  color: #ffffff;
+  padding: 32px 16px;
+}
+
+.footer h6 {
+  color: black;
+}

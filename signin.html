@@ -1,3 +1,5 @@
+<!--This is the template for the goldfinch website. It already has the header and footer embedded. Just duplicate and insert code in the body-->
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -15,10 +17,11 @@
       crossorigin="anonymous"
     />
     <!-- css -->
-    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="./styles/footer.css" />
+    <link rel="stylesheet" href="./styles/header.css" />
     <!--Script for Font awesome icons-->
     <script
-      src="https://kit.fontawesome.com/ad8cc7c5e9.js"
+      src="https://kit.fontawesome.com/149ae3bfe5.js"
       crossorigin="anonymous"
     ></script>
     <!-- importing header and footer templates -->
@@ -31,6 +34,7 @@
   </head>
   <body>
     <div id="header"></div>
+
     <main class="container mb-5">
       <section class="container d-flex justify-content-center my-5 w-50">
         <div class="d-flex flex-column">
@@ -58,16 +62,22 @@
               aria-describedby="basic-addon2"
             />
           </div>
-
+          <div>
+            <label>
+              <input type="checkbox" class="mr-2" />
+              <small>Remember me?</small>
+            </label>
+          </div>
           <div class="d-flex justify-content-between my-3">
             <small> <a href="">Forgot Password?</a> </small>
             <small> <a href="signup.html">Create Account</a> </small>
           </div>
 
-          <button type="submit" class="btn btn-md">Sign In</button>
+          <button type="submit" class="btn btn-md btn-dark">Sign IN</button>
         </div>
       </section>
     </main>
+
     <div id="footer"></div>
 
     <!-- bootstrap JS -->
@@ -76,53 +86,5 @@
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
     ></script>
-    <style>
-      body {
-      font-family: Arial, sans-serif;
-      }
-      input[type=text], select, textarea {
-      width: 100%;
-      padding: 8px;
-      border: 1px solid #ccc;
-      border-radius: 4px;
-      margin-top: 4px;
-      margin-bottom: 10px;
-      }
-      input[type=submit] {
-      background-color: #4CAF50;
-      color: white;
-      padding: 8px 12px;
-      border: none;
-      border-radius: 4px;
-      cursor: pointer;
-      }
-      .container {
-      width: 80%;
-      max-width: 500px;
-      margin: 0 auto;
-      border-radius: 6px;
-      background-color: #F2F2F2;
-      padding: 20px;
-      }
-      h3 {
-      text-align: center;
-      }
-      label {
-      font-weight: bold;
-      }
-      textarea {
-      resize: vertical;
-      }
-      /* Optional: Add additional styles to make it more visually appealing */
-      .container {
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-      }
-      input[type=submit]:hover {
-      background-color: #45a049;
-      }
-      /*.new{
-          background-color: #4CAF50;
-      }*/
-      </style>
   </body>
 </html>

@@ -1,0 +1,17 @@
+.header-commands {
+  color: black;
+}
+
+.logo {
+  font-family: "Sedgwick Ave Display", cursive;
+  font-size: 40px;
+  color: #b76e79;
+  font-weight: bold;
+}
+
+.header-categories {
+  background-color: #b76e79;
+  color: white;
+  border-radius: 8px;
+  padding: 0 36px;
+}
