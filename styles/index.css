@@ -1,0 +1,15 @@
+.promotions {
+    background-color: #D9D9D9;
+    
+}
+
+.promotion-text {
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 22px;
+    line-height: 97.5%;
+    color: #000000;
+}
+
+.border-change {
+    border-radius: 60px;
+}

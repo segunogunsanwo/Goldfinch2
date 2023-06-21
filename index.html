@@ -1,62 +1,337 @@
+<!--This is the body of the goldfinch website.-->
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <link href="normalize.css" rel="stylesheet" />
-    <title>Goldfinch2.0</title>
+    <title>Document</title>
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <!--fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display&display=swap" rel="stylesheet">
+    <!-- css -->
+    <link rel="stylesheet" href="./styles/index.css">
+    <link rel="stylesheet" href="./styles/footer.css" />
+    <link rel="stylesheet" href="./styles/header.css" />
+    <!--Script for Font awesome icons-->
+    <script
+      src="https://kit.fontawesome.com/149ae3bfe5.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- importing header and footer templates -->
+    <script>
+      $(function () {
+        $("#header").load("templates/header.html");
+        $("#footer").load("templates/footer.html");
+      });
+    </script>
   </head>
   <body>
-    <div class="top">
-      <div class="content">
-        <div class="content-left">
-          <a href="#shoppingcart" class="shoppingcart">icon</a>
-          <a href="#search">icon</a>
-        </div>
-        <div class="content-right">
-          <a href="signin.html">sign-in |</a>
-          <a href="#createaccount">create account |</a>
-          <a href="#trackorder">track order |</a>
-        </div>
-      </div>
-    </div>
-    <div class="icon">
-      <div class="icon-img"></div>
-    </div>
-    <nav>
-      <ul>
-        <li><a href="#engagement&weddings">Engagement & Weddings</a></li>
-        <li><a href="#earrings">Earrings</a></li>
-        <li><a href="#necklace&pendants">Necklace & Pendants</a></li>
-        <li><a href="#bracelets&bangles">Bracelets & Bangles</a></li>
-        <li><a href="#watches">Watches</a></li>
-        <li><a href="#customize">Customize</a></li>
-      </ul>
-    </nav>
+    <div id="header"></div>
 
-    <section id="items" class="items">
-      <!--<h2>A propos</h2>-->
-      <div class="item">
-        <div class="item-text">
-          <a href="#shopnew">shop new arrivals </a>
-        </div>
+    <!--Insert your codes here. beginning of main/body-->
+        <div class="container">
+            <div class="promotions row my-3">
+                <div class="col-xs-12 my-3 p-5">
+                    <h4 class="promotion-text text-center">SPACE FOR PROMOTIONAL PICTURES AND TEXT</h4>
+                </div>
+            </div>
+            <section class="container">
+                <!--Shop By Gemstone-->
+                <div>
+                  <p id="shop_by_gemstone" class="shop-by-gemstone my-5 mx-auto">
+                    Shop by Gemstone
+                  </p>
+                </div>
+                <div class="row mx-auto justify-content-center">
+                  <div class="col">
+                    <img
+                      class="image-thumbnail"
+                      src="images/homepage/SHOP BY GEMSTONE-diamond ring.webp"
+                      width="300"
+                      height="300"
+                      alt="necklace"
+                    />
+                    <div class="fig-caption my-3 categories">
+                      <a href="/product.html"> Diamond </a>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <img
+                      class="image-thumbnail"
+                      src="images/homepage/SHOP BY GEMSTONE-pearl.webp"
+                      width="300"
+                      height="300"
+                      alt="necklace"
+                    />
+                    <div class="fig-caption my-3 categories">
+                      <a href="/product.html"> Pearl</a>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <img
+                      class="image-thumbnail"
+                      src="images/homepage/SHOP BY GEMSTONE -morganite.webp"
+                      width="300"
+                      height="300"
+                      alt="necklace"
+                    />
+                    <div class="fig-caption my-3 categories">
+                      <a href="/product.html"> Morganite</a>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <img
+                      class="image-thumbnail"
+                      src="images/homepage/SHOP BY GEMSTONE-sapphire.webp"
+                      width="300"
+                      height="300"
+                      alt="necklace"
+                    />
+                    <div class="fig-caption my-3 categories">
+                      <a href="/product.html"> Sapphire </a>
+                    </div>
+                  </div>
+                </div>
+      
+                <!--Shop By Price-->
+                <div>
+                  <p id="shop_by_metal" class="shop-categories my-5 mx-auto">
+                    Shop by Price
+                  </p>
+                </div>
+                <div class="row m-auto">
+                  <div class="col">
+                    <img
+                      class="image-thumbnail"
+                      src="images/homepage/shop by price -UNDER $150.webp"
+                      width="300"
+                      height="300"
+                      alt="necklace"
+                    />
+                    <div class="fig-caption my-3 categories">
+                      <a href="/product.html"> Under $150 </a>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <img
+                      class="image-thumbnail"
+                      src="images/homepage/shop by price -UNDER$300.webp"
+                      width="300"
+                      height="300"
+                      alt="necklace"
+                    />
+                    <div class="fig-caption my-3 categories">
+                      <a href="/product.html"> Under $300 </a>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <img
+                      class="image-thumbnail"
+                      src="images/homepage/shop by price-UNDER $500.webp"
+                      width="300"
+                      height="300"
+                      alt="necklace"
+                    />
+                    <div class="fig-caption my-3 categories">
+                      <a href="/product.html"> Under $500 </a>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <img
+                      class="image-thumbnail"
+                      src="images/homepage/shop by price-OVER $500.webp"
+                      width="300"
+                      height="300"
+                      alt="necklace"
+                    />
+                    <div class="fig-caption my-3 categories">
+                      <a href="/product.html"> Over $500 </a>
+                    </div>
+                  </div>
+                </div>
+      
+                <!--Shop By Metals-->
+                <div>
+                  <p id="shop_by_gemstones" class="shop-categories my-5 mx-auto">
+                    Shop by Metals
+                  </p>
+                </div>
+                <div class="row m-auto">
+                  <div class="col">
+                    <img
+                      class="image-thumbnail"
+                      src="images/homepage/yellow gold.webp"
+                      width="300"
+                      height="300"
+                      alt="necklace"
+                    />
+                    <div class="fig-caption my-3 categories">
+                      <a href="/product.html"> Yellow Gold </a>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <img
+                      class="image-thumbnail"
+                      src="images/homepage/rose gold.webp"
+                      width="300"
+                      height="300"
+                      alt="necklace"
+                    />
+                    <div class="fig-caption my-3 categories">
+                      <a href="/product.html"> Rose Gold </a>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <img
+                      class="image-thumbnail"
+                      src="images/homepage/white gold.jpg"
+                      width="300"
+                      height="300"
+                      alt="necklace"
+                    />
+                    <div class="fig-caption my-3 categories">
+                      <a href="/product.html"> White Gold </a>
+                    </div>
+                  </div>
+                  <!-- <div class="col">
+                    <img
+                      class="image-thumbnail"
+                      src="images/shop_by_gemstone/pearl/IMG_2776.JPG"
+                      width="300"
+                      height="300"
+                      alt="necklace"
+                    />
+                    <div class="fig-caption my-3 categories">
+                      <a href="/product.html"> Pearls </a>
+                    </div>
+                  </div> -->
+                </div>
+                <!--Shop By Occasion-->
+                <div>
+                  <p id="shop_by_occasion" class="shop-categories my-5 mx-auto">
+                    Shop by Occasion
+                  </p>
+                </div>
+                <div class="row m-auto">
+                  <div class="col">
+                    <img
+                      class="image-thumbnail"
+                      src="images/homepage/anniversary.webp"
+                      width="300"
+                      height="300"
+                      alt="necklace"
+                    />
+                    <div class="fig-caption my-3 categories">
+                      <a href="/product.html">Anniversary</a>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <img
+                      class="image-thumbnail"
+                      src="images/homepage/SHOP BY OCCASION-BIRTHDAY.webp"
+                      width="300"
+                      height="300"
+                      alt="necklace"
+                    />
+                    <div class="fig-caption my-3 categories">
+                      <a href="/product.html">Birthday</a>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <img
+                      class="image-thumbnail"
+                      src="images/homepage/baby.jpg"
+                      width="300"
+                      height="300"
+                      alt="necklace"
+                    />
+                    <div class="fig-caption my-3 categories">
+                      <a href="/product.html"> Baby & Christening </a>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <img
+                      class="image-thumbnail"
+                      src="images/homepage/Graduation.webp"
+                      width="300"
+                      height="300"
+                      alt="necklace"
+                    />
+                    <div class="fig-caption my-3 categories">
+                      <a href="/product.html"> Graduation</a>
+                    </div>
+                  </div>
+                </div>
 
-        <div class="img">
-          <div class="item-image"></div>
-        </div>
-      </div>
+                <!--Shop By Karats-->
+                <div>
+                    <p id="shop_by_karats" class="shop-categories my-5 mx-auto">
+                      Shop by Karats
+                    </p>
+                  </div>
+                  <div class="row m-auto">
+                    <div class="col">
+                      <img
+                        class="border-change image-thumbnail border rounded"
+                        src="images/homepage/18 karat.jpg"
+                        width="300"
+                        height="300"
+                        alt="necklace"
+                      />
+                      <div class="fig-caption my-3 categories">
+                        <a href="/product.html">18 karats</a>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <img
+                        class="border-change image-thumbnail border border-3 border-dark rounded"
+                        src="images/homepage/22 karats.webp"
+                        width="300"
+                        height="300"
+                        alt="necklace"
+                      />
+                      <div class="fig-caption my-3 categories">
+                        <a href="/product.html">22 karats</a>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <img
+                        class="image-thumbnail border border-dark rounded"
+                        src="images/homepage/24 karats.jpg"
+                        width="300"
+                        height="300"
+                        alt="necklace"
+                      />
+                      <div class="fig-caption my-3 categories">
+                        <a href="/product.html">24 karats</a>
+                      </div>
+                    </div>
+                  </div>
+              </section>
+            
 
-      <div class="item">
-        <div class="item-text">
-          <a href="#shopnew">shop sales jewelry </a>
         </div>
+    
+    <!--end of main/body-->
+    <div id="footer"></div>
 
-        <div class="img">
-          <div class="item-image"></div>
-        </div>
-      </div>
-    </section>
+    <!-- bootstrap JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>

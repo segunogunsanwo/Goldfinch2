@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link href="normalize.css" rel="stylesheet" />
+    <title>Goldfinch2.0</title>
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <!-- css -->
+    <link rel="stylesheet" href="./styles/footer.css" />
+    <link rel="stylesheet" href="./styles/header.css" />
+    <!--Script for Font awesome icons-->
+    <script
+      src="https://kit.fontawesome.com/149ae3bfe5.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- importing header and footer templates -->
+    <script>
+      $(function () {
+        $("#header").load("templates/header.html");
+        $("#footer").load("templates/footer.html");
+      });
+    </script>
+  </head>
+  <body>
+    <div class="top">
+      <div class="content">
+        <div class="content-left">
+          <a href="#shoppingcart" class="shoppingcart">icon</a>
+          <a href="#search">icon</a>
+        </div>
+        <div class="content-right">
+          <a href="signin.html">sign-in |</a>
+          <a href="#createaccount">create account |</a>
+          <a href="#trackorder">track order |</a>
+        </div>
+      </div>
+    </div>
+    <div class="icon">
+      <div class="icon-img"></div>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#engagement&weddings">Engagement & Weddings</a></li>
+        <li><a href="#earrings">Earrings</a></li>
+        <li><a href="#necklace&pendants">Necklace & Pendants</a></li>
+        <li><a href="#bracelets&bangles">Bracelets & Bangles</a></li>
+        <li><a href="#watches">Watches</a></li>
+        <li><a href="#customize">Customize</a></li>
+      </ul>
+    </nav>
+
+    <section id="items" class="items">
+      <!--<h2>A propos</h2>-->
+      <div class="item">
+        <div class="item-text">
+          <a href="#shopnew">shop new arrivals </a>
+        </div>
+
+        <div class="img">
+          <div class="item-image"></div>
+        </div>
+      </div>
+
+      <div class="item">
+        <div class="item-text">
+          <a href="#shopnew">shop sales jewelry </a>
+        </div>
+
+        <div class="img">
+          <div class="item-image"></div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
