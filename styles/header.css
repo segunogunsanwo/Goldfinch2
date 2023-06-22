@@ -14,4 +14,21 @@
   color: white;
   border-radius: 8px;
   padding: 0 36px;
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 18px;
+  line-height: 97.5%;
+  font-weight: 400;
+  background-color: #b76e79;
+  color: #ffffff;
 }
+
+.top-text {
+  font-family: "Blnker", sans-serif;
+  font-size: 16px;
+  line-height: 97.5%;
+  font-weight: 400;
+  color: #000000;
+  text-decoration: none;
+}
+
+
